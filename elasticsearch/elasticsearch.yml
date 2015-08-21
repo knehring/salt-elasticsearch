@@ -1,0 +1,5 @@
+# Elasticsearch config for {{ grains['fqdn'] }}
+# Cluster: {{ grains['elasticsearch']['cluster'] }}
+
+cluster.name: {{ grains['elasticsearch']['cluster'] }}
+node.name: "{{ grains['fqdn'] }}"
